@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
+// numberofUsers := 3000000
+// var less declaration is not allowed otside the method body
+
+// decalring a Public var by making it : the First letter is capitalize it'll become the
+// public var and it can be accessed by other programs in the same directory
+
+const LoginToken string = "fghjfdf" // Public Var
+
 func main() {
 	// fmt.Println("Variables")
 	var username string = "annonym"
@@ -28,4 +36,27 @@ func main() {
 	var largeflt float64 = 255.34567824344545
 	fmt.Println(largeflt)
 	fmt.Printf("vfariable is of type :%T \n ", largeflt)
+
+	// defaaault values and some aliases
+	var anotherVar int
+	fmt.Println(anotherVar)
+	fmt.Printf("variable is of type :%T \n ", anotherVar)
+
+	var anotherVarst string
+	fmt.Println(anotherVarst)
+	fmt.Printf("variable is of type :%T \n ", anotherVarst)
+
+	// implicit way of declaring
+
+	var website = "afcgvhb.in"
+	fmt.Println(website)
+	fmt.Printf("type of the var is %T \n ", website)
+	// %T only work in the Printf Function::
+
+	// No var style
+	numberofUsers := 3000000
+	fmt.Println(numberofUsers)
+
+	fmt.Println(LoginToken)
+	fmt.Printf("type of the var is %T \n ", LoginToken)
 }
